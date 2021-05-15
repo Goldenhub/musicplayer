@@ -26,11 +26,6 @@ aside.sidebar {
   transition: height .7s;
   z-index: 10;;
 }
-aside.sidebar i.icon {
-  padding: 10px;
-  height: 100%;
-  color: goldenrod;
-}
 
 aside.sidebar ul {
   width: 100%;
@@ -42,18 +37,22 @@ aside.sidebar ul li{
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
-
-li div {
-  width: 160px;
+aside.sidebar i.icon {
+  padding: 5px;
   height: 100%;
-  padding: 10px;
+  color: goldenrod;
 }
-li > p.duration {
-  padding: 10px;
+li div {
+  padding: 5px;
+  height: 100%;
+}
+/* li > p.duration {
+  padding: 0;
   height: 100%;
   font-size: 0.7rem;
   text-align: right;
-}
+  border: 1px solid red;
+} */
 /* ---------------------ASIDE ENDS--------------------- */
 div.container {
   display: flex;
