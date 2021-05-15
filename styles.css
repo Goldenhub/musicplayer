@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+}
+
+/* ----------------------------ASIDE --------------- */
+aside.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(7, 7, 29);
+  color: white;
+  height: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  transition: height .7s;
+  z-index: 10;;
+}
+aside.sidebar i.icon {
+  padding: 10px;
+  height: 100%;
+  color: goldenrod;
+}
+
+aside.sidebar ul {
+  width: 100%;
+  list-style-type: none;
+}
+aside.sidebar ul li{
+  background-color: rgb(21, 13, 51);
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+li div {
+  width: 160px;
+  height: 100%;
+  padding: 10px;
+}
+li > p.duration {
+  padding: 10px;
+  height: 100%;
+  font-size: 0.7rem;
+  text-align: right;
+}
+/* ---------------------ASIDE ENDS--------------------- */
+div.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+div.hamburger {
+  color: white;
+  padding: 20px;
+  width: fit-content;
+}
+
+div.cover{
+  font-size: 5rem;
+  background: -webkit-linear-gradient(rgb(21, 13, 51), white, rgb(21, 13, 51));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-self: center;
+}
+
+.animate{
+  animation: rotateDisc 2s infinite linear;
+}
+
+@keyframes rotateDisc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+main div.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+main div.content p.title{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+main div.content p.artist{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 60%);
+}
+p.title2 {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+p.artist2 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 60%);
+}
+
+footer {
+  background-color: rgb(21, 13, 51);
+  padding: 10px;
+}
+div.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+div.controls i {
+  margin: auto 20px;
+}
+div.slider {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+div.slider #slider {
+  width: 80%;
+}
+span.start, span.stop {
+  color: goldenrod;
+  font-weight: bold;
+}
+#pause {
+  display: none;
+}
+
+
+/* HOVER STATES */
+aside.sidebar ul li:hover{
+  cursor: pointer;
+  background-color: hsl(252, 65%, 8%);
+}
+div.slider #slider:hover {
+  cursor: pointer;
+}
+div.controls i:hover {
+  color: hsl(252, 65%, 30%);
+  cursor: pointer;
+}
+div.hamburger:hover aside.sidebar {
+  height: 40vh;
+}
+ aside.sidebar:hover {
+  cursor: default;
+}
+div.hamburger:hover {
+  color: goldenrod;
+  cursor: pointer;
+}
+button:hover{
+  color: goldenrod !important;
+  border-color: goldenrod !important;
+  cursor: pointer;
+}
+
+/* sidebar on desktop and larger screen */
+@media only screen and (min-width: 420px) {
+  aside.sidebar {
+    width: 0px;
+    height: 85%;
+    transition: width .7s;
+  }
+
+  div.hamburger:hover aside.sidebar {
+    width: 320px;
+    height: 85%;
+  }
+
+  aside.sidebar ul {
+    width: 320px;
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hamburger">
+        <i class="fa fa-list fa-2x"></i>
+        <aside class="sidebar">
+          <ul id="musicList">
+
+          </ul>
+        </aside>
+      </div>
+      <div class="cover">
+        <i class="fa fa-dot-circle-o fa-5x"></i>
+      </div>
+      <main>
+        <div class="content">
+          <p class="title" id="title">no track</p>
+          <p class="artist" id="artist">--</p>
+        </div>
+
+        <footer>
+          <div class="slider">
+            <span class="start" id="start">0:00</span>
+            <input type="range" name="slider" id="slider" value="0" />
+            <span class="stop" id="stop">0:00</span>
+          </div>
+          <div class="controls">
+            <i id="prev" class="fa fa-step-backward fa-2x"></i>
+            <i id="play" class="fa fa-play-circle fa-4x"></i>
+            <i id="pause" class="fa fa-pause-circle fa-4x"></i>
+            <i id="next" class="fa fa-step-forward fa-2x"></i>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
