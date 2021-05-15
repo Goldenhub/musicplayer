@@ -69,7 +69,9 @@ div.hamburger {
 
 div.cover{
   font-size: 5rem;
+  background: linear-gradient(rgb(21, 13, 51), white, rgb(21, 13, 51));
   background: -webkit-linear-gradient(rgb(21, 13, 51), white, rgb(21, 13, 51));
+  background: -ms-linear-gradient(rgb(21, 13, 51), white, rgb(21, 13, 51));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   align-self: center;
