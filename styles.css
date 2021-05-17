@@ -9,8 +9,9 @@ html {
 body {
   position: relative;
   background-color: black;
-  height: 100vh;
+  height: 100vh;;
 }
+
 
 /* ----------------------------ASIDE --------------- */
 aside.sidebar {
@@ -67,12 +68,10 @@ div.hamburger {
 }
 
 div.cover{
-  font-size: 5rem;
-  background: transparent;
+  font-size: 60px;
   background: -webkit-linear-gradient(rgb(21, 13, 51), white, rgb(21, 13, 51));
   background: -ms-linear-gradient(rgb(21, 13, 51), white, rgb(21, 13, 51));
   background-clip: text;
-  color: grey;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -ms-background-clip: text;
